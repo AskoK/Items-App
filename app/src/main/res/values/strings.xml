@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Items App</string>
+    <string name="ent">Enter a number</string>
+    <string name="novat">Unit price excl. VAT</string>
+    <string name="vat">Unit price incl. VAT</string>
+    <string name="pcs">Enter a number</string>
+    <string name="clr">Clear</string>
+    <string name="ok">Ok</string>
+</resources>

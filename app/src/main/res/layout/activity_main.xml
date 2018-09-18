@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    android:background="@color/backGround"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Unit price"
+        android:textStyle="bold"
+        android:textColor="@color/textBlack"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_item"
+        android:hint="@string/ent"
+        android:textColorHint="@color/textRed"
+        android:inputType="number"
+        android:layout_marginBottom="15dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number of units"
+        android:textStyle="bold"
+        android:textColor="@color/textBlack"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_pcs"
+        android:hint="@string/pcs"
+        android:textColorHint="@color/textRed"
+        android:inputType="number"
+        android:layout_marginBottom="15dp"
+        android:background="@color/white"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/novat"
+            android:text="@string/novat"
+            android:checked="true"
+            android:layout_marginBottom="10dp"
+            android:buttonTint="@color/textBlack"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/vat"
+            android:text="@string/vat"
+            android:layout_marginBottom="20dp"
+            android:buttonTint="@color/textBlack"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/clr"
+            android:text="@string/clr"
+            android:background="@drawable/round"
+            android:textColor="@color/textRed"
+            android:onClick="onClick"/>
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ok"
+            android:text="@string/ok"
+            android:background="@drawable/round2"
+            android:textColor="@color/white"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount excl. of VAT"
+        android:textStyle="bold"
+        android:textColor="@color/textBlack"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exclvat"
+        android:textColorHint="@color/textRed"
+        android:inputType="none"
+        android:background="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VAT"
+        android:textStyle="bold"
+        android:textColor="@color/textBlack"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vatonly"
+        android:textColorHint="@color/textRed"
+        android:inputType="none"
+        android:background="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount incl. of VAT"
+        android:textStyle="bold"
+        android:textColor="@color/textBlack"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/withvat"
+        android:textColorHint="@color/textRed"
+        android:inputType="none"
+        android:background="@color/white" />
+
+
+</LinearLayout>
